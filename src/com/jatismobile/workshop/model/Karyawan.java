@@ -27,7 +27,7 @@ public class Karyawan implements Serializable {
     @Column(name = "nama_karyawan")
     private String namaKaryawan;
     private String alamat;
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "karyawan")
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "karyawan")
     private List<Gaji> listgaji;
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "listKaryawan")
     private List<Project> listProject;

@@ -30,7 +30,7 @@ public class Gaji implements Serializable {
     @Column(name="tanggal_gajian")
     private Date tanggalGajian;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "karyawan_id",nullable = false)
+    @JoinColumn(name = "karyawan_id", nullable = false)
     private Karyawan karyawan;
 
     public long getIdGaji() {

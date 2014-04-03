@@ -17,6 +17,6 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        SessionFactory sessionFactory = new AnnotationConfiguration().configure().buildSessionFactory();
+        SessionFactory sessionFactory=new AnnotationConfiguration().configure().buildSessionFactory();
     }
 }

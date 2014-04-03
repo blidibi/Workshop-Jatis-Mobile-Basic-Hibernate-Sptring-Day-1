@@ -34,7 +34,7 @@ public class Project implements Serializable {
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date dateend;
     @ManyToMany
-    @JoinTable(name = "JOIN_KARYAWAN_PROJECT",joinColumns = {@JoinColumn(name = "project_id")},inverseJoinColumns = {@JoinColumn(name = "karyawan_id")})
+    @JoinTable(name = "JOIN_KARYAWAN_PROJECT",joinColumns= {@JoinColumn(name = "project_id")},inverseJoinColumns = {@JoinColumn(name = "karyawan_id")})
     private List<Karyawan> listKaryawan;
 
     public long getId() {
